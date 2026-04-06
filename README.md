@@ -8,6 +8,16 @@ O presente trabalho insere-se no contexto de uma **Atividade Disciplinar de Exte
 
 Para fundamentar a arquitetura do sistema, foi realizado um levantamento preliminar de requisitos em conjunto com a equipe de TI da empresa parceira. Esse alinhamento permitiu identificar necessidades específicas do negócio, restrições técnicas, fluxos de trabalho atuais e expectativas de integração com outros sistemas eventualmente utilizados. A partir desse diagnóstico, definiu-se uma arquitetura orientada a componentes modulares, priorizando escalabilidade, segurança e usabilidade, de modo a atender tanto as demandas imediatas da empresa quanto possíveis evoluções futuras.
 
+Site da empresa parceria: [**TME - Telemedicina Cardiológica**](https://tmebr.com/)
+
+---
+
+## Protótipos
+
+- **Figma:** [Projeto Integrador III-B no Figma]
+- **ClickUP:** [Projeto Integrador III-B no ClickUP](https://sharing.clickup.com/90171099536/b/h/6-901712597830-2/769752445433103)
+
+
 ---
 
 ## Objetivo do Sistema
@@ -99,7 +109,7 @@ frontend/
 
 ---
 
-## 📊 Modelagem Inicial (Entidades)
+## Modelagem Inicial (Entidades)
 
 - User
 - Project
@@ -111,13 +121,13 @@ frontend/
 
 ## Funcionalidades Implementadas (MVP)
 
-- [ ] Autenticação (login/cadastro)
-- [ ] CRUD de usuários
-- [ ] CRUD de projetos
-- [ ] CRUD de tarefas
-- [ ] Kanban básico
-- [ ] Associação usuário ↔ projeto
-- [ ] Controle de status de tarefas
+- [✔] Autenticação (login/cadastro)
+- [✔] CRUD de usuários
+- [✔] CRUD de projetos
+- [✔] CRUD de tarefas
+- [✔] Kanban básico
+- [✔] Associação usuário ↔ projeto (Usuários cadastrados na plataforma)
+- [✔] Controle de status de tarefas
 
 ---
 

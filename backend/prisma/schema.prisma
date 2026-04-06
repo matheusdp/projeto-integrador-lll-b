@@ -14,9 +14,9 @@ model User {
   password  String
   createdAt DateTime @default(now())
 
-  ownedProjects  Project[]       @relation("ProjectOwner")
-  memberships    ProjectMember[]
-  assignedTasks  Task[]          @relation("TaskAssignee")
+  ownedProjects Project[]       @relation("ProjectOwner")
+  memberships   ProjectMember[]
+  assignedTasks Task[]          @relation("TaskAssignee")
 }
 
 model Project {
@@ -33,9 +33,9 @@ model Project {
 }
 
 model ProjectMember {
-  id       String      @id @default(cuid())
-  role     ProjectRole @default(MEMBER)
-  joinedAt DateTime    @default(now())
+  id       String   @id @default(cuid())
+  role     String   @default("MEMBER") // valores possíveis: "OWNER", "MEMBER"
+  joinedAt DateTime @default(now())
 
   project   Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
   projectId String
@@ -47,28 +47,17 @@ model ProjectMember {
 }
 
 model Task {
-  id          String     @id @default(cuid())
+  id          String    @id @default(cuid())
   title       String
   description String?
-  status      TaskStatus @default(TODO)
-  order       Int        @default(0)
+  status      String    @default("TODO") // valores possíveis: "TODO", "IN_PROGRESS", "DONE"
+  order       Int       @default(0)
   dueDate     DateTime?
-  createdAt   DateTime   @default(now())
+  createdAt   DateTime  @default(now())
 
   project   Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
   projectId String
 
   assignee   User?   @relation("TaskAssignee", fields: [assigneeId], references: [id])
   assigneeId String?
-}
-
-enum TaskStatus {
-  TODO
-  IN_PROGRESS
-  DONE
-}
-
-enum ProjectRole {
-  OWNER
-  MEMBER
 }
