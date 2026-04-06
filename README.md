@@ -2,9 +2,11 @@
 
 ## Visão Geral
 
-Este projeto consiste no desenvolvimento de um sistema web para gerenciamento de tarefas e projetos, com foco em organização, acompanhamento e produtividade de equipes.
+Este projeto consiste no desenvolvimento de um sistema web para gerenciamento de tarefas e projetos, com foco em organização, acompanhamento e produtividade de equipes. A solução será aplicada como ferramenta real de apoio à gestão de atividades internas de uma organização parceira, promovendo melhoria nos fluxos de trabalho e no cumprimento de prazos.
 
-O sistema será utilizado como solução real para apoiar uma organização parceira na gestão de suas atividades internas.
+O presente trabalho insere-se no contexto de uma **Atividade Disciplinar de Extensão**, vinculada à disciplina de **Projeto Integrador III-B** do curso de **Análise e Desenvolvimento de Sistemas (ADS)**. Como parte dessa atividade, estabeleceu-se uma parceria com a empresa **Telemedicina Cardiológica Guerra & Miranda LTDA (CNPJ: 07.507.740/0001-68)** , que atuará como organização beneficiária da solução.
+
+Para fundamentar a arquitetura do sistema, foi realizado um levantamento preliminar de requisitos em conjunto com a equipe de TI da empresa parceira. Esse alinhamento permitiu identificar necessidades específicas do negócio, restrições técnicas, fluxos de trabalho atuais e expectativas de integração com outros sistemas eventualmente utilizados. A partir desse diagnóstico, definiu-se uma arquitetura orientada a componentes modulares, priorizando escalabilidade, segurança e usabilidade, de modo a atender tanto as demandas imediatas da empresa quanto possíveis evoluções futuras.
 
 ---
 
@@ -37,7 +39,7 @@ Permitir que usuários:
 ### Ferramentas de Apoio
 - ClickUp → Gerenciamento do projeto
 - GitHub → Versionamento de código
-- Figma → Protótipos (opcional)
+- Figma → Protótipos
 
 ---
 
