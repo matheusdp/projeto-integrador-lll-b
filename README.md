@@ -14,7 +14,7 @@ Site da empresa parceria: [**TME - Telemedicina Cardiológica**](https://tmebr.c
 
 ## Protótipos
 
-- **Figma:** [Projeto Integrador III-B no Figma]
+- **Figma:** [Projeto Integrador III-B no Figma](https://www.figma.com/design/rRlaehlCnuZP5xzjVGipto/Projeto-Integrador-3-B?node-id=0-1&t=RJR2R8LRhNE3h2Px-1)
 - **ClickUP:** [Projeto Integrador III-B no ClickUP](https://sharing.clickup.com/90171099536/b/h/6-901712597830-2/769752445433103)
 
 

@@ -1,5 +1,6 @@
 import { Link, useNavigate } from 'react-router-dom';
 import useAuthStore from '../../store/authStore';
+import Logo from "/assets/logo_escrita.svg";
 
 export default function Navbar() {
   const { user, logout } = useAuthStore();
@@ -13,7 +14,7 @@ export default function Navbar() {
   return (
     <header className="bg-white border-b border-gray-200 px-6 py-3 flex items-center justify-between">
       <Link to="/projects" className="text-lg font-semibold text-blue-600">
-        TaskManager
+          <img className="scale-75" src={Logo} alt="Logo escrita TarkManager"/>
       </Link>
       <div className="flex items-center gap-4">
         <span className="text-sm text-gray-600">{user?.name}</span>
